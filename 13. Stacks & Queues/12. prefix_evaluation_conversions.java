@@ -34,7 +34,8 @@ public class Main {
                 //evaluation in infix stack
                 String inV1 = in .pop();
                 String inV2 = in .pop();
-                String inVal = "(" + inV1 + opr + inV2 + ")"; in .push(inVal);
+                String inVal = "(" + inV1 + opr + inV2 + ")"; 
+                in.push(inVal);
 
                 //evaluation in postfix stack
                 String postV1 = post.pop();
@@ -46,7 +47,7 @@ public class Main {
         }
 
         System.out.println(eval.peek());
-        System.out.println( in .peek());
+        System.out.println(in.peek());
         System.out.println(post.peek());
 
     }

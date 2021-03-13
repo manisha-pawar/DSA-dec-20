@@ -34,7 +34,8 @@ public class Main {
                 //evaluate in infix stack
                 String inV2 = in .pop();
                 String inV1 = in .pop();
-                String inVal = "(" + inV1 + opr + inV2 + ")"; in .push(inVal);
+                String inVal = "(" + inV1 + opr + inV2 + ")"; 
+                in.push(inVal);
 
                 //evaluate in prefix stack
                 String preV2 = pre.pop();
@@ -45,7 +46,7 @@ public class Main {
         }
 
         System.out.println(eval.peek());
-        System.out.println( in .peek());
+        System.out.println( in.peek());
         System.out.println(pre.peek());
     }
 
